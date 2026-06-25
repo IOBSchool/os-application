@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>片山 恵理 様｜お申し込みページ｜ドイツIOBオーガニックスクール</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --point:#f26b3b;
+    --ink:#553727;
+    --bg:#f9f7ef;
+    --second:#0085c9;
+    --sub:#85634b;
+    --line:#e6ddc9;
+    --white:#fffdf8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:"Noto Sans JP",sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.9;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:680px;margin:0 auto;padding:0 20px;}
+  h1,h2,h3,.mincho{font-family:"Zen Old Mincho",serif;}
+
+  /* HERO */
+  .hero{
+    background:var(--white);
+    padding:48px 0 40px;
+    border-bottom:3px solid var(--point);
+  }
+  .hero .eyebrow{
+    color:var(--point);
+    font-weight:700;
+    font-size:14px;
+    letter-spacing:.04em;
+    margin-bottom:14px;
+  }
+  .hero h1{
+    font-size:27px;
+    font-weight:700;
+    line-height:1.5;
+    margin-bottom:18px;
+  }
+  .hero .lead{
+    font-size:15px;
+    color:var(--sub);
+  }
+  .logo{
+    display:flex;align-items:center;gap:10px;
+    margin-top:32px;color:var(--point);font-weight:700;
+    font-family:"Zen Old Mincho",serif;line-height:1.2;font-size:15px;
+  }
+  .logo .mark{
+    width:38px;height:38px;border-radius:50%;
+    background:var(--point);color:#fff;display:flex;
+    align-items:center;justify-content:center;font-size:18px;flex:none;
+  }
+
+  section{padding:40px 0;}
+  .sec-title{
+    font-size:21px;font-weight:700;margin-bottom:22px;
+    padding-left:14px;border-left:5px solid var(--point);
+  }
+
+  .card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:24px 22px;
+    margin-bottom:16px;
+  }
+
+  /* プラン内訳 */
+  .plan-name{
+    font-size:18px;font-weight:700;text-align:center;
+    background:var(--ink);color:#fff;border-radius:10px;
+    padding:12px;margin-bottom:6px;font-family:"Zen Old Mincho",serif;
+  }
+  .plan-sub{text-align:center;font-size:13px;color:var(--sub);margin-bottom:18px;}
+  .feat{list-style:none;}
+  .feat li{
+    padding:11px 0 11px 28px;position:relative;font-size:15px;
+    border-bottom:1px dashed var(--line);
+  }
+  .feat li:last-child{border-bottom:none;}
+  .feat li::before{
+    content:"";position:absolute;left:4px;top:18px;
+    width:9px;height:9px;border-radius:50%;background:var(--point);
+  }
+  .feat .sched{
+    display:block;margin-top:5px;font-size:13px;line-height:1.7;
+    color:var(--second);font-weight:500;
+  }
+
+  /* 受講生の声（動画） */
+  .voices{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .voice{
+    background:var(--white);border:1px solid var(--line);border-radius:14px;
+    overflow:hidden;text-decoration:none;color:inherit;display:block;
+    transition:transform .15s,box-shadow .15s;
+  }
+  .voice:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(85,55,39,.1);}
+  .voice .thumb{
+    position:relative;aspect-ratio:16/9;background:#f0e6d6;
+    display:flex;align-items:center;justify-content:center;overflow:hidden;
+  }
+  .voice .thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .voice .play{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:46px;height:46px;border-radius:50%;background:rgba(242,107,59,.95);
+    display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(0,0,0,.25);
+  }
+  .voice .play::after{
+    content:"";border-style:solid;border-width:9px 0 9px 15px;
+    border-color:transparent transparent transparent #fff;margin-left:3px;
+  }
+  .voice .yt{
+    position:absolute;top:8px;left:8px;background:#cc0000;color:#fff;
+    font-size:10px;font-weight:700;padding:2px 7px;border-radius:4px;letter-spacing:.03em;
+  }
+  .voice .meta{padding:12px 12px 14px;}
+  .voice .vname{font-family:"Zen Old Mincho",serif;font-weight:700;font-size:15px;}
+  .voice .vrole{font-size:12px;color:var(--sub);margin-top:2px;}
+
+  /* 実績の声 */
+  .result{
+    background:var(--white);border:1px solid var(--line);border-left:5px solid var(--point);
+    border-radius:0 12px 12px 0;padding:18px 20px;margin-bottom:14px;
+  }
+  .result .quote{font-size:16px;font-weight:700;line-height:1.7;color:var(--ink);}
+  .result .quote .em{color:var(--point);}
+  .result .who{font-size:13px;color:var(--sub);margin-top:10px;}
+  .voice-note{font-size:12px;color:var(--sub);margin-top:14px;text-align:center;}
+
+  /* 価格 */
+  .price-box{text-align:center;padding:28px 22px;}
+  .price-flow{font-size:15px;color:var(--sub);margin-bottom:8px;}
+  .price-flow .strike{text-decoration:line-through;opacity:.7;}
+  .price-special{
+    font-family:"Zen Old Mincho",serif;font-weight:900;
+    font-size:20px;color:var(--ink);margin-bottom:4px;
+  }
+  .price-special b{color:var(--point);font-size:30px;}
+  .price-note{font-size:13px;color:var(--sub);}
+
+  /* 支払い表 */
+  .pay-table{width:100%;border-collapse:collapse;font-size:15px;}
+  .pay-table th,.pay-table td{
+    text-align:left;padding:13px 6px;border-bottom:1px solid var(--line);vertical-align:top;
+  }
+  .pay-table th{width:38%;color:var(--sub);font-weight:500;}
+  .pay-table td{font-weight:700;}
+  .hl{color:var(--point);}
+  .total-row{
+    margin-top:18px;background:#fbeee6;border-radius:10px;
+    padding:16px 18px;text-align:center;font-size:15px;line-height:1.8;
+  }
+  .total-row b{font-family:"Zen Old Mincho",serif;font-size:24px;color:var(--point);}
+
+  .callout{
+    background:#eaf5fb;border-radius:12px;padding:18px 20px;
+    font-size:14px;color:#1a5a78;line-height:1.85;margin-top:8px;
+  }
+
+  /* フォーム */
+  .form-sec{background:var(--white);border-top:3px solid var(--point);}
+  form{margin-top:6px;}
+  .field{margin-bottom:20px;}
+  label{display:block;font-weight:700;font-size:15px;margin-bottom:8px;}
+  label .req{color:var(--point);font-size:12px;margin-left:6px;}
+  input[type=text],input[type=email],input[type=tel],textarea{
+    width:100%;padding:13px 14px;border:1px solid var(--line);
+    border-radius:10px;font-size:16px;font-family:inherit;background:#fff;color:var(--ink);
+  }
+  input:focus,textarea:focus{outline:none;border-color:var(--point);}
+  textarea{min-height:90px;resize:vertical;}
+  .check{
+    display:flex;gap:10px;align-items:flex-start;
+    background:var(--bg);border-radius:10px;padding:14px;font-size:14px;line-height:1.7;
+  }
+  .check input{margin-top:5px;flex:none;width:18px;height:18px;accent-color:var(--point);}
+  .submit{
+    width:100%;background:var(--point);color:#fff;border:none;
+    padding:17px;border-radius:12px;font-size:17px;font-weight:700;
+    font-family:"Zen Old Mincho",serif;cursor:pointer;margin-top:8px;
+    transition:opacity .2s;
+  }
+  .submit:hover{opacity:.9;}
+  .submit:disabled{opacity:.5;cursor:not-allowed;}
+  .form-note{font-size:13px;color:var(--sub);margin-top:14px;text-align:center;line-height:1.8;}
+
+  #thanks{display:none;text-align:center;padding:30px 10px;}
+  #thanks .mincho{font-size:20px;color:var(--point);margin-bottom:14px;}
+
+  footer{
+    background:var(--ink);color:#e9ddcd;text-align:center;
+    padding:28px 20px;font-size:12px;line-height:1.9;
+  }
+  .closing{
+    background:var(--white);text-align:center;padding:44px 20px;
+  }
+  .closing .mincho{font-size:22px;line-height:1.6;color:var(--ink);}
+  .closing .small{font-size:15px;color:var(--sub);margin-top:14px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">片山 恵理 様｜お申し込みページ</div>
+    <h1>植物の力を、続いていく事業に。<br>ここから、ご一緒に。</h1>
+    <div class="lead">ドイツIOBオーガニックスクール<br>「オーガニック専門家コース」起業家向けグルコンプラン</div>
+    <div class="logo">
+      <span class="mark">ω</span>
+      <span>Institut für<br>Organic Business</span>
+    </div>
+  </div>
+</header>
+
+<div id="closedNotice" style="display:none;">
+  <section>
+    <div class="wrap">
+      <div class="card" style="text-align:center;padding:48px 24px;">
+        <div class="mincho" style="font-size:22px;color:var(--point);margin-bottom:16px;">受付は終了いたしました</div>
+        <p style="color:var(--sub);line-height:1.9;">このお申し込みページの受付期間は終了いたしました。<br>
+        お問い合わせは、IOBオーガニックスクール事務局<br>（school@iob.bio）までご連絡ください。</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="liveContent">
+<section>
+  <div class="wrap">
+    <h2 class="sec-title">お申し込み内容</h2>
+    <div class="card">
+      <div class="plan-name">起業家向け グルコンプラン</div>
+      <div class="plan-sub">専門家共創・経営の伴走 ／ 1年間</div>
+      <ul class="feat">
+        <li>アーカイブ動画講座（全21講座）<span class="sched">お申し込み直後からアクセスいただけます。<br>※ 10回分割のため、視聴できる動画には制限があります。お支払いが進むごとに、アクセスできる動画が増えていく仕組みです。</span></li>
+        <li>メールレッスン（365日）<span class="sched">2026年8月1日から開始予定</span></li>
+        <li>月2回グループコンサル 全24回（経営の伴走）<span class="sched">2026年9月1日から開始予定</span></li>
+        <li>共同学習会 全12回<span class="sched">2026年7月から、前期グループへご参加いただきます。</span></li>
+        <li>コミュニティ参加・人脈紹介（審査制）</li>
+        <li>SNS・メルマガ・HPでのご紹介（審査制）</li>
+        <li>視察・イベント参加権（招待制）</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <h2 class="sec-title">スクール生へのお約束</h2>
+    <div class="card">
+      <ul class="feat">
+        <li>なぜオーガニックがいいのかを、エビデンスに基づいて理解する</li>
+        <li>自分のオーガニックの知識に、絶対的な自信を持つ</li>
+        <li>お客様に、正しいオーガニックの知識を伝えられる</li>
+        <li>安心・安全なものを、自信をもって選べるようになる</li>
+        <li>オーガニックを武器に、起業や事業ができる</li>
+        <li>社会・地球・次世代に貢献できる自分になれる</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <h2 class="sec-title">資格を取得した受講生の声</h2>
+    <div class="voices">
+      <a class="voice" href="https://www.youtube.com/watch?v=IKLH6YvqLCE&list=PLC7ldLFCvgQgf1VTb2o4MUEl4UYon0t7q" target="_blank" rel="noopener">
+        <div class="thumb"><span class="yt">▶ YouTube</span><img src="https://i.ytimg.com/vi/IKLH6YvqLCE/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></div>
+        <div class="meta"><div class="vname">小林 和代 さん</div><div class="vrole">オーガニックコスメ専門家</div></div>
+      </a>
+      <a class="voice" href="https://www.youtube.com/watch?v=SVW_f8o3JLU&list=PLC7ldLFCvgQgf1VTb2o4MUEl4UYon0t7q" target="_blank" rel="noopener">
+        <div class="thumb"><span class="yt">▶ YouTube</span><img src="https://i.ytimg.com/vi/SVW_f8o3JLU/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></div>
+        <div class="meta"><div class="vname">北村 渚 さん</div><div class="vrole">オーガニックコスメ専門家</div></div>
+      </a>
+      <a class="voice" href="https://www.youtube.com/watch?v=hBM6TNmnu30&list=PLC7ldLFCvgQgf1VTb2o4MUEl4UYon0t7q" target="_blank" rel="noopener">
+        <div class="thumb"><span class="yt">▶ YouTube</span><img src="https://i.ytimg.com/vi/hBM6TNmnu30/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></div>
+        <div class="meta"><div class="vname">ビルケルト 恵 さん</div><div class="vrole">オーガニック専門家</div></div>
+      </a>
+      <a class="voice" href="https://www.youtube.com/watch?v=OlyG-AKINbQ&list=PLC7ldLFCvgQgf1VTb2o4MUEl4UYon0t7q" target="_blank" rel="noopener">
+        <div class="thumb"><span class="yt">▶ YouTube</span><img src="https://i.ytimg.com/vi/OlyG-AKINbQ/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></div>
+        <div class="meta"><div class="vname">村田 枝里 さん</div><div class="vrole">オーガニック専門家</div></div>
+      </a>
+      <a class="voice" href="https://www.youtube.com/watch?v=TpcaIA6MpjQ&list=PLC7ldLFCvgQgf1VTb2o4MUEl4UYon0t7q" target="_blank" rel="noopener">
+        <div class="thumb"><span class="yt">▶ YouTube</span><img src="https://i.ytimg.com/vi/TpcaIA6MpjQ/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></div>
+        <div class="meta"><div class="vname">野田 寿美子 さん</div><div class="vrole">オーガニック専門家</div></div>
+      </a>
+      <a class="voice" href="https://www.youtube.com/watch?v=PQUvv2M6yZY&list=PLC7ldLFCvgQgf1VTb2o4MUEl4UYon0t7q" target="_blank" rel="noopener">
+        <div class="thumb"><span class="yt">▶ YouTube</span><img src="https://i.ytimg.com/vi/PQUvv2M6yZY/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></div>
+        <div class="meta"><div class="vname">矢野 浩道 さん</div><div class="vrole">オーガニック専門家</div></div>
+      </a>
+      <a class="voice" href="https://www.youtube.com/watch?v=g5SsI_LQb3Q&list=PLC7ldLFCvgQgf1VTb2o4MUEl4UYon0t7q" target="_blank" rel="noopener">
+        <div class="thumb"><span class="yt">▶ YouTube</span><img src="https://i.ytimg.com/vi/g5SsI_LQb3Q/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></div>
+        <div class="meta"><div class="vname">田中 優介 さん</div><div class="vrole">オーガニック専門家</div></div>
+      </a>
+      <a class="voice" href="https://www.youtube.com/watch?v=ah6qDS44X-Q&list=PLC7ldLFCvgQgf1VTb2o4MUEl4UYon0t7q" target="_blank" rel="noopener">
+        <div class="thumb"><span class="yt">▶ YouTube</span><img src="https://i.ytimg.com/vi/ah6qDS44X-Q/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></div>
+        <div class="meta"><div class="vname">川田 むつみ さん</div><div class="vrole">オーガニック専門家</div></div>
+      </a>
+    </div>
+    <p class="voice-note">サムネイルをタップすると、インタビュー動画（YouTube）が開きます。<br><a href="https://www.youtube.com/playlist?list=PLC7ldLFCvgQgf1VTb2o4MUEl4UYon0t7q" target="_blank" rel="noopener" style="color:var(--point);font-weight:700;">▶ ほかの受講生インタビューを再生リストで見る</a></p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <h2 class="sec-title">ご案内価格</h2>
+    <div class="card price-box">
+      <div class="price-flow"><span class="strike">288万円 相当</span> → 通常 <span class="strike">66万円</span></div>
+      <div class="price-special">個別相談 特別価格 <b>44万円</b></div>
+      <div class="price-note">（税込）</div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <h2 class="sec-title">お支払いについて</h2>
+    <div class="card">
+      <table class="pay-table">
+        <tr><th>お支払い方法</th><td>銀行振込</td></tr>
+        <tr><th>お支払い回数</th><td>10回 分割</td></tr>
+        <tr><th>10回分割手数料</th><td>特別価格に10%上乗せ</td></tr>
+        <tr><th>お支払い開始</th><td class="hl">2026年6月30日</td></tr>
+      </table>
+      <div class="total-row">
+        44万円 ＋ 10%（分割手数料）<br>
+        ＝ お支払い総額 <b>484,000円</b><br>
+        <span style="font-size:14px;color:var(--sub);">1回あたり 48,400円 × 10回</span>
+      </div>
+      <div class="callout">
+        振込先の口座情報は、下記フォームをお送りいただいたあと、<br>
+        <b>自動返信メール</b>にてご案内いたします。<br>
+        お手元のメールをご確認のうえ、6月30日を目安に1回目のお振込をお願いいたします。
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <h2 class="sec-title">お申し込み前のご確認</h2>
+    <div class="card" style="font-size:14px;line-height:1.85;color:var(--sub);">
+      <p style="font-weight:700;color:var(--ink);margin-bottom:6px;">キャンセルポリシー</p>
+      <p>お申し込み後、ご都合によるキャンセルをご希望の場合でも、返金はいたしかねます。受講規約とあわせてご確認ください。お申し込みいただいた時点で、キャンセルポリシー・受講規約に同意いただいたものとみなします。</p>
+      <p style="font-weight:700;color:var(--ink);margin:16px 0 6px;">お支払いについて</p>
+      <p>本ページは、片山さま個別のお取り決めにもとづく銀行振込・10回払いの専用お申し込みページです。お申し込み日から7日以内（6月30日を目安）に、1回目のお振込をお願いいたします。振込手数料はご負担をお願いいたします。</p>
+      <p style="font-weight:700;color:var(--ink);margin:16px 0 6px;">個人情報の取扱い</p>
+      <p>ご記入いただいた個人情報は、管理責任者を定めて安全に管理し、当社業務の遂行上必要な範囲でのみ使用します。ご本人の同意なく第三者に提供することはありません。お問い合わせは IOBオーガニックスクール事務局（school@iob.bio）まで。</p>
+      <p style="margin-top:18px;display:flex;flex-wrap:wrap;gap:10px 16px;">
+        <a href="terms.html" target="_blank" rel="noopener" style="color:var(--point);font-weight:700;text-decoration:underline;">受講規約を読む</a>
+        <a href="https://iob.bio/journal/lp/privacy_policy/" target="_blank" rel="noopener" style="color:var(--point);font-weight:700;text-decoration:underline;">プライバシーポリシー</a>
+        <a href="https://iob.bio/journal/lp/specified_commercial_transactions_law/" target="_blank" rel="noopener" style="color:var(--point);font-weight:700;text-decoration:underline;">特定商取引法に基づく表記</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="form-sec">
+  <div class="wrap">
+    <h2 class="sec-title">お申し込みフォーム</h2>
+
+    <form id="applyForm">
+      <div class="field">
+        <label>お名前<span class="req">必須</span></label>
+        <input type="text" name="name" placeholder="例：山田 花子" required>
+      </div>
+      <div class="field">
+        <label>会社名・屋号</label>
+        <input type="text" name="company" placeholder="例：〇〇株式会社">
+      </div>
+      <div class="field">
+        <label>メールアドレス<span class="req">必須</span></label>
+        <input type="email" name="email" placeholder="example@mail.com" required>
+        <div class="form-note" style="text-align:left;margin-top:6px;">※ こちらに振込先のご案内をお送りします。お間違いのないようご確認ください。</div>
+      </div>
+      <div class="field">
+        <label>お電話番号</label>
+        <input type="tel" name="tel" placeholder="090-0000-0000">
+      </div>
+      <div class="field">
+        <label>郵便番号<span class="req">必須</span></label>
+        <input type="text" name="zip" placeholder="000-0000" required>
+      </div>
+      <div class="field">
+        <label>ご住所<span class="req">必須</span></label>
+        <input type="text" name="address" placeholder="都道府県からご記入ください" required>
+        <div class="form-note" style="text-align:left;margin-top:6px;">※ 請求書の発行に必要です。番地・建物名までご記入ください。</div>
+      </div>
+      <div class="field">
+        <label>ご質問・ご連絡事項（任意）</label>
+        <textarea name="message" placeholder="気になること、ご相談など、なんでもどうぞ。"></textarea>
+      </div>
+
+      <div class="field">
+        <div class="check">
+          <input type="checkbox" id="agree" required>
+          <label for="agree" style="font-weight:400;margin:0;">
+            上記のプラン内容・特別価格44万円・銀行振込10回払い（手数料10%上乗せ／総額484,000円・2026年6月30日お支払い開始）、ならびに<a href="terms.html" target="_blank" rel="noopener" style="color:var(--point);font-weight:700;">受講規約</a>・<a href="https://iob.bio/journal/lp/privacy_policy/" target="_blank" rel="noopener" style="color:var(--point);font-weight:700;">プライバシーポリシー</a>・<a href="https://iob.bio/journal/lp/specified_commercial_transactions_law/" target="_blank" rel="noopener" style="color:var(--point);font-weight:700;">特定商取引法に基づく表記</a>を確認し、同意のうえお申し込みします。
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="submit" id="submitBtn">この内容で申し込む</button>
+      <div class="form-note">
+        送信後、自動返信メールにて<br>振込先・お手続きのご案内をお送りします。
+      </div>
+    </form>
+
+    <div id="thanks">
+      <div class="mincho">お申し込みありがとうございます。</div>
+      <p>確認のため、ご登録のメールアドレス宛に<br>自動返信メールをお送りしました。<br><br>
+      振込先のご案内が記載されていますので、<br>ご確認のうえ、6月30日を目安に<br>1回目のお振込をお願いいたします。<br><br>
+      これから、どうぞよろしくお願いいたします。</p>
+    </div>
+  </div>
+</section>
+
+<div class="closing">
+  <div class="wrap">
+    <p class="mincho">植物の力を、続いていく事業に。<br>その道のりを、ひとりではなく、仲間とともに。</p>
+    <p class="small">片山さんの「これから」を、ここから一緒に。</p>
+  </div>
+</div>
+
+</div><!-- /liveContent -->
+
+<footer>
+  ドイツIOBオーガニックスクール<br>
+  お問い合わせ：school@iob.bio<br><br>
+  <a href="terms.html" target="_blank" rel="noopener" style="color:#f7c9b3;text-decoration:underline;">受講規約</a>　｜
+  <a href="https://iob.bio/journal/lp/privacy_policy/" target="_blank" rel="noopener" style="color:#f7c9b3;text-decoration:underline;">プライバシーポリシー</a>　｜
+  <a href="https://iob.bio/journal/lp/specified_commercial_transactions_law/" target="_blank" rel="noopener" style="color:#f7c9b3;text-decoration:underline;">特定商取引法に基づく表記</a><br><br>
+  Copyright ©2026 Institut für Organic Business GmbH. All Rights Reserved.
+</footer>
+
+<script>
+  // ── 受付期限：2026年7月7日（JST）いっぱいで自動的に受付終了 ──
+  // 2026-07-08 00:00 JST = 2026-07-07 15:00 UTC を過ぎたら非公開表示に切り替え
+  (function(){
+    var deadline = Date.UTC(2026, 6, 7, 15, 0, 0); // 月は0始まり（6=7月）
+    if (Date.now() >= deadline) {
+      document.getElementById('liveContent').style.display = 'none';
+      document.getElementById('closedNotice').style.display = 'block';
+    }
+  })();
+
+  // ▼▼▼ GASをデプロイしたあと、ここにWebアプリのURLを貼り付けてください ▼▼▼
+  const GAS_URL = "ここにGASウェブアプリのURLを貼り付け";
+
+  const form = document.getElementById('applyForm');
+  const btn = document.getElementById('submitBtn');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!document.getElementById('agree').checked){ return; }
+    btn.disabled = true;
+    btn.textContent = "送信中…";
+
+    const data = {
+      name: form.name.value,
+      company: form.company.value,
+      email: form.email.value,
+      tel: form.tel.value,
+      zip: form.zip.value,
+      address: form.address.value,
+      message: form.message.value
+    };
+
+    fetch(GAS_URL, {
+      method:"POST",
+      mode:"no-cors",
+      headers:{"Content-Type":"text/plain;charset=utf-8"},
+      body: JSON.stringify(data)
+    }).then(function(){
+      form.style.display="none";
+      document.getElementById('thanks').style.display="block";
+      window.scrollTo({top:document.getElementById('thanks').offsetTop-40, behavior:"smooth"});
+    }).catch(function(){
+      btn.disabled=false;
+      btn.textContent="この内容で申し込む";
+      alert("送信に失敗しました。お手数ですが、もう一度お試しください。");
+    });
+  });
+</script>
+
+</body>
+</html>
